@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link icon -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- link csss -->
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <!-- title -->
+    <title>Frontend Mentor | Manage landing page</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="overlay" class="overlay hidden"></div>
+      <!-- header -->
+      <header class="header">
+        <div class="header-container">
+          <img class="header-logo" src="./images/logo.svg" alt="" />
+          <ul class="header-nav">
+            <li><a href="#">Pricing </a></li>
+            <li><a href="#">Product </a></li>
+            <li><a href="#">About Us </a></li>
+            <li><a href="#">Careers </a></li>
+            <li><a href="#">Community </a></li>
+          </ul>
+          <ul id="menu-table" class="header-menu hidden">
+            <li><a href="#">Pricing </a></li>
+            <li><a href="#">Product </a></li>
+            <li><a href="#">About Us </a></li>
+            <li><a href="#">Careers </a></li>
+            <li><a href="#">Community </a></li>
+          </ul>
+          <button class="btn btn--header">Get started</button>
+          <button id="menu" class="btn btn--menu">
+            <img src="./images/icon-hamburger.svg" alt="" />
+            <img class="hidden" src="./images/icon-close.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <!-- section content -->
+      <main>
+        <!-- introducer -->
+        <section class="introduce">
+          <div class="introduce-container">
+            <div class="introduce-content">
+              <h1 class="introduce-heading">
+                Bring everyone together to build better products.
+              </h1>
+              <p class="introduce-desc">
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <button class="btn btn--introduce">Get started</button>
+            </div>
+            <div class="introduce-banner">
+              <img src="./images/illustration-intro.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- about -->
+        <section class="about">
+          <div class="about-container">
+            <div class="about-content">
+              <h2 class="about-heading">What’s different about Manage?</h2>
+              <p class="about-desc">
+                Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
+            <div class="about-list">
+              <div class="item">
+                <span class="item-step">01</span>
+                <div class="item-infor">
+                  <h4 class="item-heading">
+                    <span class="heading-step">01</span>
+                    <span>Track company-wide progress</span>
+                  </h4>
+                  <p class="item-text">
+                    See how your day-to-day tasks fit into the wider vision. Go
+                    from tracking progress at the milestone level all the way
+                    done to the smallest of details. Never lose sight of the
+                    bigger picture again.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="item-step">02</span>
+                <div class="item-infor">
+                  <h4 class="item-heading">
+                    <span class="heading-step">02</span>
+                    <span>Advanced built-in reports </span>
+                  </h4>
+                  <p class="item-text">
+                    Set internal delivery estimates and track progress toward
+                    company goals. Our customisable dashboard helps you build
+                    out the reports you need to keep key stakeholders informed.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="item-step">03</span>
+                <div class="item-infor">
+                  <h4 class="item-heading">
+                    <span class="heading-step">03</span>
+                    <span>Everything you need in one place</span>
+                  </h4>
+                  <p class="item-text">
+                    Stop jumping from one service to another to communicate,
+                    store files, track tasks and share documents. Manage offers
+                    an all-in-one team productivity solution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- testimonials -->
+        <section class="tesimonial">
+          <div class="tesimonial-container">
+            <h2 class="tesimonial-heading">What they’ve said</h2>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      class="item-avatar"
+                      src="./images/avatar-anisha.png"
+                      alt=""
+                    />
+                    <div class="item-content">
+                      <span class="item-name">Anisha Li</span>
+                      <p class="item-text">
+                        “Manage has supercharged our team’s workflow. The
+                        ability to maintain visibility on larger milestones at
+                        all times keeps everyone motivated.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      class="item-avatar"
+                      src="./images/avatar-ali.png"
+                      alt=""
+                    />
+                    <div class="item-content">
+                      <span class="item-name">Ali Bravo</span>
+                      <p class="item-text">
+                        “We have been able to cancel so many other subscriptions
+                        since using Manage. There is no more cross-channel
+                        confusion and everyone is much more focused.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      class="item-avatar"
+                      src="./images/avatar-richard.png"
+                      alt=""
+                    />
+                    <div class="item-content">
+                      <span class="item-name"> Richard Watts </span>
+                      <p class="item-text">
+                        “Manage allows us to provide structure and process. It
+                        keeps us organized and focused. I can’t stop
+                        recommending them to everyone I talk to!”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      class="item-avatar"
+                      src="./images/avatar-shanai.png"
+                      alt=""
+                    />
+                    <div class="item-content">
+                      <span class="item-name"> Shanai Gough </span>
+                      <p class="item-text">
+                        “Their software allows us to track, manage and
+                        collaborate on our projects from anywhere. It keeps the
+                        whole team in-sync without being intrusive.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+            </div>
+            <button class="btn btn--testimonial">Get Started</button>
+            <!-- Slider main container -->
+          </div>
+        </section>
+        <!-- banner -->
+        <section class="banner">
+          <div class="banner-container">
+            <h2 class="banner-heading">Simplify how your team works today.</h2>
+            <button class="btn btn--banner">
+              <span>Get started</span>
+            </button>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="./images/white-logo.svg" alt="" />
+            </div>
+            <div class="footer-icons">
+              <img class="icon" src="./images/icon-facebook.svg" alt="" />
+              <img class="icon" src="./images/icon-youtube.svg" alt="" />
+              <img class="icon" src="./images/icon-twitter.svg" alt="" />
+              <img class="icon" src="./images/icon-pinterest.svg" alt="" />
+              <img class="icon" src="./images/icon-instagram.svg" alt="" />
+            </div>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-navs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing </a></li>
+              <li><a href="#">Products </a></li>
+              <li><a href="#">About Us </a></li>
+            </ul>
+            <ul class="footer-navs">
+              <li><a href="#">Careers </a></li>
+              <li><a href="#">Community </a></li>
+              <li><a href="#">Privacy Policy </a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <form class="footer-form">
+              <div>
+                <input
+                  id="input"
+                  placeholder="Updates in your inbox…"
+                  type="text"
+                />
+                <i id="error-text" class="hidden"
+                  >Please insert valid email !</i
+                >
+              </div>
+              <button type="button" id="go" class="btn btn--footer">Go</button>
+            </form>
+            <p class="footer-copyright">Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- test -->
+  </body>
+</html>
+<!-- script swipper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./app.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>

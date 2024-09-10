@@ -1,0 +1,129 @@
+.about {
+  padding: 80px 0;
+  background-position: left -500px top 200px;
+
+  &-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  &-heading {
+    color: $dark-blue;
+    font-size: 35px;
+  }
+
+  &-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-desc {
+    color: $dark-grayish-blue;
+    max-width: 350px;
+    line-height: 160%;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .item {
+      max-width: 500px;
+      display: flex;
+      gap: 30px;
+      align-items: start;
+
+      &-step {
+        background-color: $bright-red;
+        padding: 8px 20px;
+        color: white;
+        border-radius: 999px;
+      }
+
+      &-infor {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      &-text {
+        color: $dark-grayish-blue;
+        line-height: 160%;
+      }
+
+      &-heading {
+        color: $dark-blue;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+      }
+
+      .heading-step {
+        background-color: $bright-red;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 999px;
+        margin-right: 10px;
+        display: none;
+      }
+
+    }
+  }
+}
+
+
+// responsive 
+@media screen and (max-width : 1024px) {
+  .about {
+    padding: 40px 0;
+
+    &-container {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+    &-heading {
+      font-size: 30px;
+    }
+
+    &-content {
+      text-align: center;
+      align-self: center;
+    }
+
+    &-list {
+      align-self: center;
+    }
+    &-text {
+      font-size: 14px;
+    }
+    &-desc {
+      max-width: 100%;
+    }
+
+    .item {
+      &-step {
+        display: none;
+      }
+
+      &-heading {
+        background-color: rgba($color: $bright-red, $alpha: 0.2);
+        font-size: 14px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+
+      .heading-step {
+        display: block;
+      }
+    }
+
+  }
+}
